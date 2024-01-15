@@ -28,9 +28,24 @@ const pension = (pensionAge,currentAge)=>{
 
 
 
-// const calculator = (num1 , num2 , "*")
-
-
+const calculator = (num1 , num2 , operation) => { 
+if (operation === "+"){
+    let incrementResult = num1 + num2;
+    return incrementResult;
+}else if (operation === "-"){
+    let incrementResult = num1 - num2;
+    return incrementResult;
+}else if (operation === "/"){
+    let incrementResult = num1 - num2;
+    return incrementResult;
+}else if (operation === "*"){
+    let incrementResult = num1 * num2;
+    return incrementResult;
+}else {
+    console.log("Error")
+}
+}
+console.log(calculator(10,20,"+"))
 
 //3)შეიმუშავეთ ფუნქცია სახელწოდებით checkPasswordStrength, რომელიც აფასებს მოცემული პაროლის სიძლიერეს.
 // პაროლის სიძლიერე განისაზღვრება რამდენიმე კრიტერიუმის საფუძველზე: ის უნდა იყოს მინიმუმ 8 სიმბოლო და მაქსიმუმ 16 სიმბოლო;
@@ -49,7 +64,6 @@ else{
     console.log("hello")
 }
 
-// return checkPasswordStrength
 }
 checkPasswordStrength("35796") 
 
